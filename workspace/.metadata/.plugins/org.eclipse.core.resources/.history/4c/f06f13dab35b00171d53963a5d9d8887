@@ -1,0 +1,35 @@
+package logic.home.model;
+
+public class VariableSample {
+	public void myProfile() {
+		String name,email,phone;
+		double height, weight;
+		int age;
+		char sex;
+		
+		name = "홍길동";
+		age = 26;
+		height = 180.2;
+		weight = 78.3;
+		sex = 'M';
+		email = "honggildong@naver.com";
+		phone = "010-5015-5015";
+		
+		System.out.println("당신의 신상 정보입니다.\n"
+				+ "\n이름 : " + name
+				+ "\n나이 : " + age
+				+ "\n키 : " + height
+				+ "\n몸무게 : " + weight
+				+ "\n성별 : " + sex
+				+ "\nE-mail : " + email
+				+ "\n전화 : "+ phone);
+	}
+	
+	public void emplnformation() {
+		
+	}
+	
+	public void defaultValue() {
+		
+	}
+}

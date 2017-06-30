@@ -1,0 +1,40 @@
+package com.kh.var.example;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.*;
+/*기능제공용 클래스*/
+public class Example {
+
+	public void example1() throws IOException{
+		String buffer;
+		int input1,input2;
+		int total = 0;
+		
+		BufferedReader inbr = new BufferedReader(new InputStreamReader(System.in));
+		
+		System.out.print("첫번째 정수를 입력하세요 : ");
+		buffer = inbr.readLine();
+		input1 = Integer.parseInt(buffer);
+		System.out.print("두번째 정수를 입력하세요 : ");
+		buffer = inbr.readLine();
+		input2 = Integer.parseInt(buffer);
+		if (input1>=0 && input2>=0) {
+			if(input1>=input2){
+				total=input1-input2;
+			}else{
+				total = input2-input1;
+			}
+		}else{
+			total=input1+input2;
+		}	
+		
+		System.out.println("입력한 두 수의 덧셈 값 : "+(input1+input2));
+		System.out.println("입력한 두 수의 뺄셈 값 : "+total);		
+		System.out.println("입력한 두 수의 곱셈 값 : "+(input1*input2));
+		System.out.println("입력한 두 수의 나눗셈 값 : "+(input1/input2));
+		System.out.println("입력한 두 수를 나눈 나머지 : "+(input1%input2));
+		
+	}
+	
+}

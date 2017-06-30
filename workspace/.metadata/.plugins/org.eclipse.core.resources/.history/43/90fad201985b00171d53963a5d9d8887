@@ -1,0 +1,96 @@
+package logic.home.view;
+
+import java.util.Scanner;
+
+import logic.home.model.*;
+
+public class Menu {
+
+	private static Scanner sc = new Scanner(System.in);
+	
+	public static void mainMenu(){
+		char exit;
+		int input;
+		do{
+			System.out.println("***** 프로그래밍 기본 기능 테스트 프로그램 *****\n\n"
+					+ "\t\t1. 변수 테스트\n"
+					+ "\t\t2. 기본 자료형 테스트\n"
+					+ "	\t\t3. if문 테스트\n"
+					+ "	\t\t4. switch문 테스트\n"
+					+ "\t\t5. for문 테스트\n"
+					+ "\t\t6. while문 테스트\n"
+					+ "\t\t7. do~while문 테스트\n"
+					+ "\t\t8. break문 테스트\n"
+					+ "\t\t9. continue문 테스트\n"
+					+ "\t\t10. static 메소드 사용 테스트\n"
+					+ "\t\t11. non-static 메소드 사용 테스트\n"
+					+ "\t\t12. 프로그램 종료\n"
+					+ "\t\t메뉴 번호 입력 : ");
+			input = sc.nextInt();
+			
+			switch(input){
+			case 1:
+				break;
+			case 2:
+				break;
+			case 3:
+				break;
+			case 4:
+				break;
+			case 5:
+				break;
+			case 6:
+				break;
+			case 7:
+				break;
+			case 8:
+				break;
+			case 9:
+				break;
+			case 10:
+				break;
+			case 11:
+				break;
+			case 12:
+				System.out.print("정말로 종료하시겠습니까? (예:y/아니오:n");
+				exit = sc.next().toUpperCase().charAt(0);
+				break;
+			}
+			
+		}while(exit!='Y');
+	}
+	 public static void subVarMenu(){
+		 
+	 }
+	 public static void subPTypeMenu(){
+		 
+	 }
+	 public static void subIfMenu(){
+		 
+	 }
+	 public static void subSwitchMenu(){
+		 
+	 }
+	 public static void subForMenu(){
+		 
+	 }
+	 public static void subWhileMenu(){
+		 
+	 }
+	 public static void subDoWhileMenu(){
+		 
+	 }
+	 public static void subBreakMenu(){
+		 
+	 }
+	 public static void subContinueMenu(){
+		 
+	 }
+	 public static void subStaticMethodMenu(){
+		 
+	 }
+	 public static void subNonStaticMethodMenu(){
+		 
+	 }
+	
+}

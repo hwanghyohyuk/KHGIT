@@ -1,0 +1,13 @@
+package com.kh.var.example;
+
+import java.io.IOException;
+
+public class TestMain {
+
+	public static void main(String[] args) throws IOException {
+		// TODO Auto-generated method stub
+		Example exam = new Example();
+		exam.example1();
+	}
+
+}

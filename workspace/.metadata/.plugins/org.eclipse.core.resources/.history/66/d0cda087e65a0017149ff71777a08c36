@@ -1,0 +1,74 @@
+package logic.view;
+
+import java.util.Scanner;
+
+public class Menu {
+	public static void displayMenu(){
+		/*변수 선언부*/
+		Scanner sc = new Scanner(System.in);
+		int mnum;
+		
+		/*메뉴 출력부*/
+		do{
+			System.out.print("*** 지역변수/연산자/제어문 연습 프로그램 ***\n\n"
+					+ "1. 간단 계산기\n" //calculator() 실행
+					+ "2. 작은수에서 큰수까지 합계구하기\n" //totalCalculator() 실행
+					+ "3. 신상정보 확인하기\n" //profile() 실행
+					+ "4. 학생정보 확인하기\n" //sungjuk() 실행
+					+ "5. 별과 숫자 출력하기\n" //printStarNumber() 실행
+					+ "6. 난수까지의 합게 구하기\n" //sumRandomNumber() 실행
+					+ "7. 구구단\n" //continueGugudan() 실행
+					+ "8. 주사위 숫자 알아맞추기 게임\n" //shutNumber() 실행
+					+ "9. 프로그램 종료\n\n" //
+					+ "메뉴 번호 입력 (1-9) : "); //
+			
+			/*키보드 입력부*/
+			mnum = sc.nextInt();
+			
+			/*입력값에 따른 프로그램 진행 또는 종료*/
+			switch(mnum){
+			case 1:
+				System.out.println("프로그램 종료!");
+				break;
+			case 2:
+				System.out.println("프로그램 종료!");
+				break;
+			case 3:
+				System.out.println("프로그램 종료!");
+				break;
+			case 4:
+				System.out.println("프로그램 종료!");
+				break;
+			case 5:
+				System.out.println("프로그램 종료!");
+				break;
+			case 6:
+				System.out.println("프로그램 종료!");
+				break;
+			case 7:
+				System.out.println("프로그램 종료!");
+				break;
+			case 8:
+				System.out.println("프로그램 종료!");
+				break;
+			case 9:
+				System.out.println("프로그램 종료!");
+				
+				break;
+			default:
+				printClear();
+				System.out.println("다시 입력해주세요!");
+				continue;				
+			}
+			
+			
+			
+			
+		}while(mnum!=9);		
+	}
+	public void printClear() {
+		for(int i = 0; i<50;i++){
+			System.out.println();
+		}
+	}
+}

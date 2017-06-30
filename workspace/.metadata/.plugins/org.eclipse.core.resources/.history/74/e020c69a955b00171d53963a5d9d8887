@@ -1,0 +1,11 @@
+package logic.home.controller;
+
+import java.awt.Menu;
+
+public class TestMain {
+
+	public static void main(String[] args) {
+		Menu.mainMenu();
+	}
+
+}

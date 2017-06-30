@@ -1,0 +1,29 @@
+package logic.home.model;
+
+public class PrimitiveTypeSample {
+
+	public void typeSize() {
+		// TODO Auto-generated method stub
+		boolean flag = false;
+		byte bnum = 0;
+		short snum = 0;
+		int inum = 0;
+		long lnum = 0;
+		float fnum = 0;
+		double dnum = 0;
+		char ch = 0;
+		String str = null;
+		
+	}
+
+	public void minMaxValue() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void bitSize() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

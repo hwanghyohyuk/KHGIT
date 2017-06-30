@@ -1,0 +1,88 @@
+package com.kh.var.example;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.*;
+/*기능제공용 클래스*/
+public class Example {
+	
+	private BufferedReader inbr = new BufferedReader(new InputStreamReader(System.in));
+	private String buffer;
+	
+	public void example1() {
+		int input1,input2;
+		int total = 0;
+		
+		System.out.print("첫번째 정수를 입력하세요 : ");
+		try {
+			buffer = inbr.readLine();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		input1 = Integer.parseInt(buffer);
+		System.out.print("두번째 정수를 입력하세요 : ");
+		try {
+			buffer = inbr.readLine();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		input2 = Integer.parseInt(buffer);
+		if (input1>=0 && input2>=0) {
+			if(input1>=input2){
+				total=input1-input2;
+			}else{
+				total = input2-input1;
+			}
+		}else{
+			total=input1-input2;
+		}	
+		
+		System.out.println("입력한 두 수의 덧셈 값 : "+(input1+input2));
+		System.out.println("입력한 두 수의 뺄셈 값 : "+total);		
+		System.out.println("입력한 두 수의 곱셈 값 : "+(input1*input2));
+		System.out.println("입력한 두 수의 나눗셈 값 : "+(input1/input2));
+		System.out.println("입력한 두 수를 나눈 나머지 : "+(input1%input2));
+	}
+	
+	public void example2(){
+		double width,height;
+		
+		System.out.print("가로 : ");
+		try {
+			buffer = inbr.readLine();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		width = Double.parseDouble(buffer);
+		System.out.print("세로 : ");
+		try {
+			buffer = inbr.readLine();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		height = Double.parseDouble(buffer);
+		
+		System.out.println("면적 : "+width*height);
+		System.out.println("둘레 : "+2*(width+height));
+	}
+	
+	public void example3(){
+		String inputS;
+		
+		System.out.println("문자열을 입력하세요");
+		try {
+			buffer = inbr.readLine();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		inputS = buffer;
+		for(int i=0;i<inputS.length();i--){
+		System.out.print(inputS.charAt(i));
+		}
+	}
+}

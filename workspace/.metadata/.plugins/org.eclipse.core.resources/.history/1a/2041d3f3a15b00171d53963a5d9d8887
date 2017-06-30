@@ -1,0 +1,18 @@
+package logic.home.model;
+
+public class IfSample {
+
+	public void maxNumber() {
+		// TODO Auto-generated method stub
+		
+	}
+	public void minNumber() {
+		// TODO Auto-generated method stub
+		
+	}
+	public void threeMaxMin() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

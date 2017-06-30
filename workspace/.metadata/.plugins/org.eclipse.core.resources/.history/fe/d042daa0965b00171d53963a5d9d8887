@@ -1,0 +1,24 @@
+package logic.home.view;
+
+import java.util.Scanner;
+
+import logic.home.model.*;
+
+public class Menu {
+
+	private static Scanner sc = new Scanner(System.in);
+	
+	public static void mainMenu(){}
+	 public static void subVarMenu(){}
+	 public static void subPTypeMenu(){}
+	 public static void subIfMenu(){}
+	 public static void subSwitchMenu(){}
+	 public static void subForMenu(){}
+	 public static void subWhileMenu(){}
+	 public static void subDoWhileMenu(){}
+	 public static void subBreakMenu(){}
+	 public static void subContinueMenu(){}
+	 public static void subStaticMethodMenu(){}
+	 public static void subNonStaticMethodMenu(){}
+	
+}

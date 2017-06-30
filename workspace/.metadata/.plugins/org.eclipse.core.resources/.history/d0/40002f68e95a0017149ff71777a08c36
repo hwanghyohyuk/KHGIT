@@ -1,0 +1,30 @@
+package logic.controller;
+
+public class Function {
+	public static void printClear() {
+		for(int i = 0; i<40;i++){
+			System.out.println();
+		}
+	}
+	
+	public static void calculator() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	public static void totalCalculator() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	public static void profile() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	public static void sungjuk() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+}

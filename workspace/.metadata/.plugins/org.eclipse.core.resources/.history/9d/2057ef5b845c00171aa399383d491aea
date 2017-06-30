@@ -1,0 +1,15 @@
+package test.string;
+
+public class TestString {
+ 
+	public static void main(String[] args){
+		
+		String str = "red apples";
+		String result1 = str.substring(4);
+		String result2 = str.substring(0,2);
+		System.out.println(result1);
+		System.out.println(result2);
+		
+		
+	}
+}

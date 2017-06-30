@@ -1,0 +1,29 @@
+package operator.test;
+
+import java.util.Scanner;
+
+public class Example {
+	private Scanner sc = new Scanner(System.in);
+	public void sample1(){		
+		System.out.print("국어 점수 : ");
+		int korean = sc.nextInt();
+		System.out.print("영어 점수 : ");
+		int english = sc.nextInt();
+		System.out.print("수학 점수 : ");
+		int math = sc.nextInt();
+		
+		int total = korean+english+math;
+		double average = total / 3.0;
+		
+		System.out.println((korean>=40 && english >=40 && math >=40 && average>=60)?"합격":"불합격");
+	}
+	public void sample2(){
+		
+	}
+	public void sample3(){
+		
+	}
+	public void sample4(){
+		
+	}
+}

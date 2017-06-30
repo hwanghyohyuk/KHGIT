@@ -1,0 +1,66 @@
+package logic.home.model;
+
+import java.util.Scanner;
+
+public class VariableSample {
+	private Scanner sc = new Scanner(System.in);
+	public void myProfile() {
+		String name,email,phone;
+		double height, weight;
+		int age;
+		char sex;
+		
+		name = "홍길동";
+		age = 26;
+		height = 180.2;
+		weight = 78.3;
+		sex = 'M';
+		email = "honggildong@naver.com";
+		phone = "010-5015-5015";
+		
+		System.out.println("당신의 신상 정보입니다.\n"
+				+ "\n이름 : " + name
+				+ "\n나이 : " + age
+				+ "\n키 : " + height
+				+ "\n몸무게 : " + weight
+				+ "\n성별 : " + sex
+				+ "\nE-mail : " + email
+				+ "\n전화 : "+ phone);
+	}
+	
+	public void emplnformation() {
+		String name,email,phone;
+		double height, weight;
+		int age;
+		char sex;
+		
+		System.out.println("사원정보를 입력하세요.");
+		System.out.print("이름 : ");
+		name = sc.next();
+		System.out.print("나이 : ");
+		age = sc.nextInt();
+		System.out.print("키 : ");
+		height = sc.nextDouble();
+		System.out.print("몸무게 : ");
+		weight = sc.nextDouble();
+		System.out.print("성별 : ");
+		sex = sc.next().toUpperCase().charAt(0);
+		System.out.print("E-mail : ");
+		email = sc.next();
+		System.out.print("전화 : ");
+		phone = sc.next();
+		
+		System.out.println("입력된 사원정보 : \n"
+				+ "이름 : "+ name
+				+ "나이 :"+ age
+				+ "키 : "+ height
+				+ "몸무게 : "+ weight
+				+ "성별 : "+ sex
+				+ "E-mail : "+email
+				+ "전화 : "+phone);		
+	}
+	
+	public void defaultValue() {
+		
+	}
+}

@@ -1,0 +1,66 @@
+package logic.home.view;
+
+import java.util.Scanner;
+
+import logic.home.model.*;
+
+public class Menu {
+
+	private static Scanner sc = new Scanner(System.in);
+	
+	public static void mainMenu(){
+		char exit;
+		do{
+			System.out.println("***** 프로그래밍 기본 기능 테스트 프로그램 *****\n\n"
+					+ "\t\t1. 변수 테스트\n"
+					+ "\t\t2. 기본 자료형 테스트\n"
+					+ "	\t\t3. if문 테스트\n"
+					+ "	\t\t4. switch문 테스트\n"
+					+ "\t\t5. for문 테스트\n"
+					+ "\t\t6. while문 테스트\n"
+					+ "\t\t7. do~while문 테스트\n"
+					+ "\t\t8. break문 테스트\n"
+					+ "\t\t9. continue문 테스트\n"
+					+ "\t\t10. static 메소드 사용 테스트\n"
+					+ "\t\t11. non-static 메소드 사용 테스트\n"
+					+ "\t\t12. 프로그램 종료\n"
+					+ "\t\t메뉴 번호 입력 : ");
+
+			
+		}while(exit!='Y');
+	}
+	 public static void subVarMenu(){
+		 
+	 }
+	 public static void subPTypeMenu(){
+		 
+	 }
+	 public static void subIfMenu(){
+		 
+	 }
+	 public static void subSwitchMenu(){
+		 
+	 }
+	 public static void subForMenu(){
+		 
+	 }
+	 public static void subWhileMenu(){
+		 
+	 }
+	 public static void subDoWhileMenu(){
+		 
+	 }
+	 public static void subBreakMenu(){
+		 
+	 }
+	 public static void subContinueMenu(){
+		 
+	 }
+	 public static void subStaticMethodMenu(){
+		 
+	 }
+	 public static void subNonStaticMethodMenu(){
+		 
+	 }
+	
+}

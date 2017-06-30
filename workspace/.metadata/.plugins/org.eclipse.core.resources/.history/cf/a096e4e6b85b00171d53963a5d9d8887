@@ -1,0 +1,20 @@
+package logic.home.model;
+
+public class PrimitiveTypeSample {
+
+	public void typeSize() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void minMaxValue() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void bitSize() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

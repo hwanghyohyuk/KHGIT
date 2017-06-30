@@ -1,0 +1,108 @@
+package logic.controller;
+
+import java.util.Scanner;
+
+public class Function {
+	private static Scanner sc = new Scanner(System.in);
+	
+	public static void printClear() {
+		for(int i = 0; i<40;i++){
+			System.out.println();
+		}
+	}
+	
+	public static void calculator() {
+		int x,y,result=0;
+		char op;
+		System.out.print("첫번째 정수 : ");
+		x = sc.nextInt();
+		System.out.print("두번째 정수 : ");
+		y = sc.nextInt();
+		System.out.print("연산문자 : ");
+		op = sc.next().toUpperCase().charAt(0);
+		
+		switch (op) {
+		case '+':
+			result = x+y;
+			System.out.println(x+" "+op+" "+y+" = "+result);
+			break;
+		case '-':
+			result = x-y;
+			System.out.println(x+" "+op+" "+y+" = "+result);
+			break;
+		case 'X':
+			result = x*y;
+			System.out.println(x+" "+op+" "+y+" = "+result);
+			break;
+		case '/':
+			if(y!=0){
+				result = x/y;
+				System.out.println(x+" "+op+" "+y+" = "+result);
+			}else{
+				result = 0;
+				System.out.println("0으로 나눌 수 없습니다.");
+			}
+			break;		
+		default:		
+			System.out.println("연산문자를 잘못입력하셨습니다.");
+			break;
+		}
+	}
+	
+	public static void totalCalculator() {
+		int x,y,result=0;
+		System.out.print("첫번째 정수 : ");
+		x = sc.nextInt();
+		System.out.print("두번째 정수 : ");
+		y = sc.nextInt();
+		
+		for(int i = x;i<=y;i++){
+			result += i;
+		}
+		
+		System.out.println(x+"부터 "+y+"까지 정수들의 합계 : "+result);
+	}
+	
+	public static void profile() {
+		String name,pers;
+		int age;
+		char sex;
+		
+		name = "홍길동";
+		age = 26;
+		sex = 'M';
+		pers = "고집불통";
+			
+		System.out.println("이름 : "+name
+				+ "	나이 : "+age+"세"
+				+ "	성별 : "+((sex=='M')?"남":"여")
+				+ "	성격 : "+pers);
+		
+	}
+	
+	public static void sungjuk() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public static void printStarNumber() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public static void sumRandomNumber() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public static void continueGugudan() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public static void shutNumber() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+}

@@ -1,0 +1,9 @@
+package logic.home.view;
+
+public class Menu {
+
+	public static void mainMenu(){
+		
+	}
+	
+}

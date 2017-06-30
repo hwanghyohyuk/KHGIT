@@ -1,0 +1,22 @@
+package array.run;
+
+import java.util.Scanner;
+
+public class TestArray {
+
+	public void displayMenu() {
+		private Scanner sc = new Scanner(System.in);
+		int no;
+		
+		do{
+			
+		}while(true);
+		
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

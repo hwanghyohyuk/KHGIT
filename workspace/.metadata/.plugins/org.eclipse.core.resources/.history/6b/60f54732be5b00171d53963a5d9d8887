@@ -1,0 +1,38 @@
+package logic.home.model;
+
+public class IfSample {
+
+	public void maxNumber() {
+		// TODO Auto-generated method stub
+		
+	}
+	public void minNumber() {
+		// TODO Auto-generated method stub
+		
+	}
+	public void threeMaxMin() {
+		// TODO Auto-generated method stub
+		
+	}
+	public void checkEven() {
+		// TODO Auto-generated method stub
+		
+	}
+	public void isPassFail() {
+		// TODO Auto-generated method stub
+		
+	}
+	public void scoreGrade() {
+		// TODO Auto-generated method stub
+		
+	}
+	public void checkPlusMinusZero() {
+		// TODO Auto-generated method stub
+		
+	}
+	public void whatCaracter() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

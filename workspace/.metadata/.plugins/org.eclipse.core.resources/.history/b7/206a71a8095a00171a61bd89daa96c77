@@ -1,0 +1,21 @@
+package testfinal.sample;
+
+public class FinalSample {
+
+	public void testFinalVariable(){
+		//지역변수 Local
+		//메소드 안에서 선언되 변수
+		//RAM의 stack 영역에 할당됨
+		//stack 은 해당 메소드가 실행될 때 변수공간에 만들어지고
+		//해당 메소드가 종료되면 자동으로 변수공간이 없어짐
+		//지역변수는 반드기 직접 초기화 처리해야 함
+		
+		int num;
+	}
+	
+	public static void main(String[] args) {
+		//final 예약어 테스트
+
+	}
+
+}

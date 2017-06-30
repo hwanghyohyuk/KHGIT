@@ -1,0 +1,10 @@
+package logic.home.model;
+
+public class PrimitiveTypeSample {
+
+	public void typeSize() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

@@ -1,0 +1,11 @@
+package array.sample;
+
+//기본 자료형 1차원 배열 테스트 샘플 제공용
+public class ArraySample1 {
+
+	public void testArray1() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

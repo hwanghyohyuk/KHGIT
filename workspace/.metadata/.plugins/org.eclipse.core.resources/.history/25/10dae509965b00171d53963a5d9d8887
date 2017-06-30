@@ -1,0 +1,11 @@
+package logic.home.view;
+
+import logic.home.*;
+
+public class Menu {
+
+	public static void mainMenu(){
+		
+	}
+	
+}

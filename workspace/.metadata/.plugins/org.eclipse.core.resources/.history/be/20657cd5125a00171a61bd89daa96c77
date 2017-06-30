@@ -1,0 +1,20 @@
+package test.string;
+
+public class TestString {
+	
+	public void testCharValue(){
+		
+	}
+	public void testStringValue() {
+		
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		TestString test = new TestString();
+		test.testCharValue();
+		//test.testStringValue();
+		
+	}
+
+}

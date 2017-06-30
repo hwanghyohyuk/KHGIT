@@ -1,0 +1,37 @@
+package array.run;
+
+import java.util.Scanner;
+
+import array.sample.*;
+
+public class TestArray {
+	private Scanner sc = new Scanner(System.in);
+	
+	public void displayMenu() {		
+		int no;
+		ArraySample1 as1 = new ArraySample1();
+		ArraySample2 as2 = new ArraySample2();		
+		do{
+			System.out.println("\n기본자료형 배열 테스트\n");
+			System.out.println("1. 정수 배열 테스트 1");
+			
+			System.out.println("9. 끝내기");
+			System.out.print("번호 선택 : ");
+			no = sc.nextInt();			
+			
+			switch (no) {
+			case 1: as1.testArray1(); break;
+
+			default:
+				break;
+			}
+		}while(true);
+		
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

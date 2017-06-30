@@ -1,0 +1,57 @@
+package logic.controller;
+
+import java.util.Scanner;
+
+public class Function {
+	private Scanner sc = new Scanner(System.in);
+	
+	public static void printClear() {
+		for(int i = 0; i<40;i++){
+			System.out.println();
+		}
+	}
+	
+	public static void calculator() {
+		int x,y;
+		System.out.print("첫번째 정수 : ");
+		x = sc.
+		System.out.print("첫번째 정수 : ");
+		
+	}
+	
+	public static void totalCalculator() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	public static void profile() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	public static void sungjuk() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public static void printStarNumber() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public static void sumRandomNumber() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public static void continueGugudan() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public static void shutNumber() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+}

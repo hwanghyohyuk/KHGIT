@@ -1,0 +1,33 @@
+package logic.home.model;
+
+public class PrimitiveTypeSample {
+
+	public void typeSize() {
+		// TODO Auto-generated method stub
+		System.out.println("기본자료형 메모리 할당 크기 확인하기"
+				+ "\nByte : " + Byte.BYTES
+				+ "\nShort : " + Short.BYTES
+				+ "\nInt : " + Integer.BYTES
+				+ "\nLong : " + Long.BYTES
+				+ "\nFloat : " + Float.BYTES
+				+ "\nDouble : " + Double.BYTES
+				+ "\nChar : " + Character.BYTES);	
+	}
+
+	public void minMaxValue() {
+		System.out.println("기본자료형 값의 최소값, 최대값 확인하기"
+				+ "\nByte : " + Byte.BYTES
+				+ "\nShort : " + Short.BYTES
+				+ "\nInt : " + Integer.BYTES
+				+ "\nLong : " + Long.BYTES
+				+ "\nFloat : " + Float.BYTES
+				+ "\nDouble : " + Double.BYTES
+				+ "\nChar : " + Character.BYTES);	
+	}
+
+	public void bitSize() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

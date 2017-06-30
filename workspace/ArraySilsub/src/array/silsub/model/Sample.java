@@ -65,7 +65,7 @@ public void munjae2(){
 				System.out.print(arr[i][j]+"\t");
 			}
 			System.out.println();
-		}		
+		}
 	}	
 }
 }

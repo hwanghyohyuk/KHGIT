@@ -27,7 +27,7 @@ public class Menu {
 					+ "\t\t12. 프로그램 종료\n"
 					+ "\t\t메뉴 번호 입력 : ");
 			input = sc.nextInt();
-			
+						
 			switch(input){
 			case 1:subVarMenu();
 				break;
@@ -52,12 +52,15 @@ public class Menu {
 			case 11:subNonStaticMethodMenu();
 				break;
 			case 12:
-				System.out.print("정말로 종료하시겠습니까? (예:y/아니오:n");
+				System.out.print("정말로 종료하시겠습니까? (예:y/아니오:n)");
 				exit = sc.next().toUpperCase().charAt(0);
 				break;
+			default:
+				System.out.println("잘못된 값을 입력하셨습니다.");
 			}
 			
 		}while(exit!='Y');
+		System.out.println("프로그램을 종료합니다.");
 		return;
 	}
 	 public static void subVarMenu(){
@@ -177,12 +180,13 @@ public class Menu {
 		 System.out.print("*** for문 테스트 부메뉴 ***\n\n"
 					+ "1. 1~10까지 정수들의 합계 구하기\n"
 					+ "2. 1~100사이의 짝수들의 합게 구하기\n"
-					+ "3. 정수 하나 입력받아, 그 수의 구구단 출력하기이전 메뉴로 돌아가기\n"
+					+ "3. 정수 하나 입력받아, 그 수의 구구단 출력하기\n"
 					+ "4. 두 개의 정수를 입력받아, 두 수중 작은 값에서 큰 값까지의 합계 구하기\n"
 					+ "5. 줄수와 칸수 입력받아, 입력된 줄수/칸수만큼 별표문자 출력하기\n"
 					+ "6. 7줄에 7칸에 별표문자 출력하되, 각 줄에 줄번호와 같은 칸에 숫자\n"
 					+ "7. 줄수를 입력받아, 삼각형 모양으로 별표문자 출력하기\n"
 					+ "8. 구구단 2단부터 9단까지 출력하기\n"
+					+ "9. 이전 메뉴로 돌아가기\n"
 					+ "메뉴 선택 : ");
 		 no = sc.nextInt();
 		 
@@ -245,7 +249,7 @@ public class Menu {
 					+ "1. 문자열값 입력받아, 문자 사이에 '-' 끼워넣어 출력하기\n"
 					+ "2. 버거킹 메뉴 주문 테스트\n"
 					+ "3. 문자열 입력받아, \"모든 글자 영문자다\"/\"영문자 아니다.\" 출력하기\n"
-					+ "4.. 이전 메뉴로 가기\n"
+					+ "4. 이전 메뉴로 가기\n"
 					+ "메뉴 선택 : ");
 		 no = sc.nextInt();
 		 
@@ -341,10 +345,11 @@ public class Menu {
 		 int no;
 		 NonStaticMethodSample nsms = new NonStaticMethodSample();
 		 do{
-		 System.out.print("*** while문 테스트 부메뉴 ***\n\n"
-					+ "1. 1~100까지의 정수 중 3의 배수를 뺀 정수들의 합계 출력하기\n"
-					+ "2. 3행 5열의 행열값 출력하되, 1행 3열부터 1행 5열까지 생략하고 출력하기\n"
-					+ "3. 이전 메뉴로 가기\n"
+		 System.out.print("*** non-static 메소드 사용 테스트 부메뉴 ***\n\n"
+					+ "1. Scanner 클래스 사용 : 자료형 종류별로 값 입력받아 출력하기\n"
+					+ "2. Date 클래스 사용 : 오늘 날짜, 현재 시간 정보 출력하기\n"
+					+ "3. Random 클래스 사용 : 정수와 실수에 대한 난수 출력하기\n"
+					+ "4. 이전 메뉴로 가기\n"
 					+ "메뉴 선택 : ");
 		 no = sc.nextInt();
 		 

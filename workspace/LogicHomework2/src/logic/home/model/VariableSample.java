@@ -79,7 +79,7 @@ public class VariableSample {
 				+ "\n long : "+lnum
 				+ "\n float : "+fnum
 				+ "\n double : "+dnum
-				+ "\n char : "+ch
+				+ "\n char : '"+ch+"'"
 				+ "\n name : "+str);
 	}
 }

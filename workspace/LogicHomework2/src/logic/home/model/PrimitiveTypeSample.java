@@ -23,7 +23,7 @@ public class PrimitiveTypeSample {
 				+ "\n Long : 최소 " + Long.MIN_VALUE +", 최대 "+Long.MAX_VALUE
 				+ "\n Float : 최소 " + Float.MIN_VALUE +", 최대 "+Float.MAX_VALUE
 				+ "\n Double : 최소 " + Double.MIN_VALUE +", 최대 "+Double.MAX_VALUE
-				+ "\n Char : 최소 '" + Character.MIN_VALUE +"', 최대 '"+Character.MAX_VALUE+"'");	
+				+ "\n Char(유니코드) : 최소 '" + (int)Character.MIN_VALUE +"', 최대 '"+(int)Character.MAX_VALUE+"'");	
 	}
 
 	public void bitSize() {

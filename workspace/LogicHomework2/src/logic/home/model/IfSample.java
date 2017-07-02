@@ -124,7 +124,19 @@ public class IfSample {
 		
 		System.out.print("문자 하나 입력 : ");
 		ch = sc.next().charAt(0);
-		/*여기부터*/
+		System.out.println((int)ch);
+		
+		if('a'<=ch && ch<='z'){//소문자일떄
+			System.out.println("입력하신 문자는 소문자입니다.");
+		}else if ('A'<=ch && ch<='Z'){
+			System.out.println("입력하신 문자는 대문자입니다.");
+		}else if('0'<=ch && ch <='9'){
+			System.out.println("입력하신 문자는 숫자문자입니다.");
+		}else if('ㄱ'<=ch && ch <='l') {
+			System.out.println("입력하신 문자는 한글문자입니다");			
+		}else {
+			System.out.println("입력하신 문자는 기타문자입니다.");
+		}
 	}
 
 }

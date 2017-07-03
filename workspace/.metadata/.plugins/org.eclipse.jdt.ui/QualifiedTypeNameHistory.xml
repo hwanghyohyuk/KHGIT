@@ -53,6 +53,9 @@
 <fullyQualifiedTypeName name="java.util.Calendar"/>
 <fullyQualifiedTypeName name="java.lang.String"/>
 <fullyQualifiedTypeName name="java.util.Random"/>
-<fullyQualifiedTypeName name="java.lang.Math"/>
 <fullyQualifiedTypeName name="array.silsub.model.Sample"/>
+<fullyQualifiedTypeName name="oop.model.Student"/>
+<fullyQualifiedTypeName name="java.lang.Math"/>
+<fullyQualifiedTypeName name="oop.model.Member"/>
+<fullyQualifiedTypeName name="oop.model.Product"/>
 </qualifiedTypeNameHistroy>

@@ -34,8 +34,11 @@ public class Test10 {
 		//1차원 배열 출력부분
 		System.out.print("copyAr : ");
 		for(int i = 0; i<copyAr.length;i++){
-			System.out.print(copyAr[i]+"  ");
+			for(int j = i+1;j<copyAr.length;j++){
+				if(copyAr[i]==copyAr[j])copyAr[j]=0;}
+			if(copyAr[i]>0)System.out.print(copyAr[i]+"  ");
 		}
+		
 	}
 }
 	

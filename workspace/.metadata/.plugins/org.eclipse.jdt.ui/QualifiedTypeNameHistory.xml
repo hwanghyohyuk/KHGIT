@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="java.io.InputStreamReader"/>
 <fullyQualifiedTypeName name="com.kh.var.example.Example"/>
 <fullyQualifiedTypeName name="java.io.IOException"/>
 <fullyQualifiedTypeName name="javax.swing.plaf.ButtonUI"/>
@@ -49,7 +48,6 @@
 <fullyQualifiedTypeName name="java.util.Random"/>
 <fullyQualifiedTypeName name="array.silsub.model.Sample"/>
 <fullyQualifiedTypeName name="oop.model.Student"/>
-<fullyQualifiedTypeName name="java.lang.Math"/>
 <fullyQualifiedTypeName name="oop.model.Member"/>
 <fullyQualifiedTypeName name="oop.model.Product"/>
 <fullyQualifiedTypeName name="java.util.Scanner"/>
@@ -60,4 +58,6 @@
 <fullyQualifiedTypeName name="oop.practice.controller.TestBook"/>
 <fullyQualifiedTypeName name="oop.practice.model.Book"/>
 <fullyQualifiedTypeName name="oop.practice.model.Product"/>
+<fullyQualifiedTypeName name="java.lang.Math"/>
+<fullyQualifiedTypeName name="oop.method.NonStaticSample"/>
 </qualifiedTypeNameHistroy>

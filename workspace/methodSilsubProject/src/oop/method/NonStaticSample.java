@@ -1,15 +1,21 @@
 package oop.method;
 
 public class NonStaticSample {
-	public NonStaticSample(){}
+	private int[] intArray = null;
 	
-	public int[] intArrayAllocation(int arraySize){
+	public NonStaticSample(){}
+		
+	public void intArrayAllocation(int arraySize){
 		int array[]=new int[arraySize];
 		for(int i=0;i<arraySize;i++){
 			int r = (int)(Math.random()*100)+1;
 			array[i]=r;
 		}
-		return array;
+		this.intArray=array;
+	}
+	
+	public int[] getArray(){
+		return  this.intArray;
 	}
 	
 	public void display(int[] arr){
@@ -26,12 +32,22 @@ public class NonStaticSample {
 		arr[index2] = tmp;
 	}
 	
-	public void sortDecending(int[] arr) {
-		
+	public int[] sortDecending(int[] arr) {
+		for(int i=0; i<arr.length;i++){
+			for(int j=i+1;j<arr.length;j++){
+				if(arr[i]<arr[j])swap(arr,i,j);
+			}
+		}
+		return arr;
 	}
 	
-	public void sortAscending(int[] arr) {
-		
+	public int[] sortAscending(int[] arr) {
+		for(int i=0; i<arr.length;i++){
+			for(int j=i+1;j<arr.length;j++){
+				if(arr[i]>arr[j])swap(arr,i,j);
+			}
+		}
+		return arr;
 	}
 	
 	public int countChar(String str, char ch) {

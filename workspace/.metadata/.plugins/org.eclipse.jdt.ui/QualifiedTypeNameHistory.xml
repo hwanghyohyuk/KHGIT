@@ -1,10 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="com.kh.var.example.Example"/>
-<fullyQualifiedTypeName name="java.io.IOException"/>
-<fullyQualifiedTypeName name="javax.swing.plaf.ButtonUI"/>
-<fullyQualifiedTypeName name="java.lang.StringBuffer"/>
-<fullyQualifiedTypeName name="testfinal.sample.FinalSample"/>
 <fullyQualifiedTypeName name="test.string.TestString"/>
 <fullyQualifiedTypeName name="java.util.concurrent.SynchronousQueue"/>
 <fullyQualifiedTypeName name="operator.test.TestMain"/>
@@ -38,13 +33,11 @@
 <fullyQualifiedTypeName name="test.array.premitive.ArraySample"/>
 <fullyQualifiedTypeName name="test.run.Main"/>
 <fullyQualifiedTypeName name="java.lang.Character"/>
-<fullyQualifiedTypeName name="java.lang.Integer"/>
 <fullyQualifiedTypeName name="java.sql.Date"/>
 <fullyQualifiedTypeName name="java.util.Date"/>
 <fullyQualifiedTypeName name="java.util.spi.CalendarDataProvider"/>
 <fullyQualifiedTypeName name="java.util.Calendar.Builder"/>
 <fullyQualifiedTypeName name="java.util.Calendar"/>
-<fullyQualifiedTypeName name="java.lang.String"/>
 <fullyQualifiedTypeName name="java.util.Random"/>
 <fullyQualifiedTypeName name="array.silsub.model.Sample"/>
 <fullyQualifiedTypeName name="oop.model.Student"/>
@@ -52,12 +45,19 @@
 <fullyQualifiedTypeName name="oop.model.Product"/>
 <fullyQualifiedTypeName name="java.util.Scanner"/>
 <fullyQualifiedTypeName name="java.lang.System"/>
-<fullyQualifiedTypeName name="com.oop.model.dto.Employee"/>
 <fullyQualifiedTypeName name="com.oop.run.EmpTest"/>
 <fullyQualifiedTypeName name="java.lang.Boolean"/>
 <fullyQualifiedTypeName name="oop.practice.controller.TestBook"/>
 <fullyQualifiedTypeName name="oop.practice.model.Book"/>
 <fullyQualifiedTypeName name="oop.practice.model.Product"/>
-<fullyQualifiedTypeName name="java.lang.Math"/>
 <fullyQualifiedTypeName name="oop.method.NonStaticSample"/>
+<fullyQualifiedTypeName name="test.method.testRecurivecallMethod"/>
+<fullyQualifiedTypeName name="oop.staticmethod.StaticMethod"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="java.lang.Integer"/>
+<fullyQualifiedTypeName name="oop.model.vo.Book"/>
+<fullyQualifiedTypeName name="com.oop.model.dto.Employee"/>
+<fullyQualifiedTypeName name="com.oop.controller.EmpArrayTest"/>
+<fullyQualifiedTypeName name="java.lang.Math"/>
+<fullyQualifiedTypeName name="test.Sort.testSelectSort"/>
 </qualifiedTypeNameHistroy>

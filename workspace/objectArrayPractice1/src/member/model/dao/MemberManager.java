@@ -6,7 +6,7 @@ import member.model.dto.Member;
 
 public class MemberManager {
 	public static final int SIZE = 10;
-	private int memberCount = 0;
+	private int memberCount;
 	private Scanner sc = new Scanner(System.in);
 	private Member[] mar = new Member[SIZE];
 

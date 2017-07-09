@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+		<item value="D:\KH_Backup\KHGIT\workspace\oopPracticeProject3"/>
+		<item value="D:\KH_Backup\KHGIT\workspace\oopPracticeProject2"/>
+		<item value="D:\KH_Backup\KHGIT\workspace\oopPracticeProject"/>
+		<item value="D:\KH_Backup\KHGIT\workspace"/>
 		<item value="E:\KHGIT\workspace"/>
 	</list>
 	<section name="WORKBENCH_SETTINGS">

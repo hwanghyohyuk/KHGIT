@@ -83,6 +83,7 @@ public class MemberMenu {
 				return;
 			default:
 				System.out.println("다시 입력해주세요.");
+				System.out.println("----------------------------------------------------------------");
 				continue;
 			}
 			System.out.println("-----------------------------결과------------------------------");
@@ -120,6 +121,7 @@ public class MemberMenu {
 				return;
 			default:
 				System.out.println("다시 입력해주세요.");
+				System.out.println("----------------------------------------------------------------");
 				continue;
 			}
 		} while (true);
@@ -182,6 +184,7 @@ public class MemberMenu {
 				return;
 			default:
 				System.out.println("다시 입력해주세요.");
+				System.out.println("----------------------------------------------------------------");
 				continue;
 			}
 		} while (true);

@@ -7,7 +7,7 @@ import com.oop.array3.model.Book;
 public class BookManager {
 	private Book[] bar = null;
 	private Scanner sc = new Scanner(System.in);
-	private int count = 0;
+	private static int count = 0;
 
 	{
 		bar = new Book[10];

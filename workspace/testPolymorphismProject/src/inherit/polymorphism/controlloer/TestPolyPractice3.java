@@ -26,10 +26,10 @@ public class TestPolyPractice3 {
 				}
 				else if (iarr[i] instanceof Triangle) {
 					System.out.println("삼각형");
-					System.out.println("빗변길이 : " + ((Triangle)iarr[i]).getHypotenuse());
+					System.out.printf("빗변길이 : %.2f \n", ((Triangle)iarr[i]).getHypotenuse());
 				}
-				System.out.println("면적 : "+((IShape)iarr[i]).area());
-				System.out.println("둘레 : "+((IShape)iarr[i]).perimeter());
+				System.out.printf("면적 : %.2f \n", ((IShape)iarr[i]).area());
+				System.out.printf("둘레 : %.2f \n", ((IShape)iarr[i]).perimeter());
 			}
 			
 		}

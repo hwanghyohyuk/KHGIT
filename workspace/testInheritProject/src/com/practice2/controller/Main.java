@@ -20,9 +20,9 @@ public class Main {
 		rar[1]=new Rectangle(2, 2, 2, 2);
 		rar[2]=new Rectangle(3, 3, 3, 3);
 		
-		car[0].draw();
-		car[1].draw();
-		car[2].draw();
+		for( Circle c : car){
+		c.draw();
+		}
 		
 		rar[0].draw();
 		rar[1].draw();

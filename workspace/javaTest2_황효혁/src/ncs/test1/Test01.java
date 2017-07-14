@@ -1,6 +1,7 @@
 package ncs.test1;
 
 import java.util.Scanner;
+import java.util.StringTokenizer;
 
 public class Test01 {
 
@@ -15,6 +16,15 @@ public class Test01 {
 		input = sc.nextLine();
 		String[] score = input.split(" ");
 
+		/*
+		StringTokenizer st = new StringTokenizer(input);
+		if(st.countTokens()==5){
+			while (st.hasMoreElements()) {
+				String object =  st.nextToken();
+				System.out.println(object);
+			}
+		}
+		 */
 		sc.close();
 		if(score.length==5){
 			dscore = new double[score.length];

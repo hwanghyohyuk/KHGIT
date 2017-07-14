@@ -1,12 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="logic.home.model.DoWhileSample"/>
-<fullyQualifiedTypeName name="logic.home.model.BreakSample"/>
-<fullyQualifiedTypeName name="logic.home.model.ContinueSample"/>
-<fullyQualifiedTypeName name="logic.home.model.StaticMethodSample"/>
-<fullyQualifiedTypeName name="logic.home.model.NonStaticMethodSample"/>
-<fullyQualifiedTypeName name="java.lang.Short"/>
-<fullyQualifiedTypeName name="java.lang.Long"/>
 <fullyQualifiedTypeName name="java.lang.Float"/>
 <fullyQualifiedTypeName name="java.lang.Double"/>
 <fullyQualifiedTypeName name="java.lang.StrictMath"/>
@@ -19,8 +12,6 @@
 <fullyQualifiedTypeName name="java.sql.Date"/>
 <fullyQualifiedTypeName name="java.util.Date"/>
 <fullyQualifiedTypeName name="java.util.spi.CalendarDataProvider"/>
-<fullyQualifiedTypeName name="java.util.Calendar.Builder"/>
-<fullyQualifiedTypeName name="java.util.Calendar"/>
 <fullyQualifiedTypeName name="array.silsub.model.Sample"/>
 <fullyQualifiedTypeName name="oop.model.Student"/>
 <fullyQualifiedTypeName name="oop.model.Member"/>
@@ -38,12 +29,10 @@
 <fullyQualifiedTypeName name="com.oop.model.dto.Employee"/>
 <fullyQualifiedTypeName name="com.oop.controller.EmpArrayTest"/>
 <fullyQualifiedTypeName name="test.Sort.testSelectSort"/>
-<fullyQualifiedTypeName name="java.util.StringTokenizer"/>
 <fullyQualifiedTypeName name="java.lang.Character"/>
 <fullyQualifiedTypeName name="ncs.test3.Tv"/>
 <fullyQualifiedTypeName name="java.lang.Integer"/>
 <fullyQualifiedTypeName name="java.util.Scanner"/>
-<fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="ncs.test7.Book"/>
 <fullyQualifiedTypeName name="ncs.test8.BookUpdate"/>
 <fullyQualifiedTypeName name="java.lang.Object"/>
@@ -60,4 +49,15 @@
 <fullyQualifiedTypeName name="java.util.Random"/>
 <fullyQualifiedTypeName name="java.lang.Math"/>
 <fullyQualifiedTypeName name="sortProject.Sort"/>
+<fullyQualifiedTypeName name="test.imp.TestImport"/>
+<fullyQualifiedTypeName name="api.sample.Sample"/>
+<fullyQualifiedTypeName name="java.lang.StringBuilder"/>
+<fullyQualifiedTypeName name="test.string.TestStringBuilder"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="java.util.Calendar.Builder"/>
+<fullyQualifiedTypeName name="java.nio.file.attribute.AclEntry.Builder"/>
+<fullyQualifiedTypeName name="java.util.GregorianCalendar"/>
+<fullyQualifiedTypeName name="test.calendar.DateCalculator"/>
+<fullyQualifiedTypeName name="java.util.Calendar"/>
+<fullyQualifiedTypeName name="java.util.StringTokenizer"/>
 </qualifiedTypeNameHistroy>

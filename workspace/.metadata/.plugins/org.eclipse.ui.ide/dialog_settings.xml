@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+		<item value="E:\KHGIT\workspace\testCalendarProject"/>
+		<item value="E:\KHGIT\workspace\testBasicAPIProject"/>
+		<item value="E:\KHGIT\workspace\ProjectEuler"/>
 		<item value="E:\KHGIT\workspace\PolymorphismSilsub"/>
 		<item value="E:\KHGIT\workspace\testObjectArrayProject"/>
 		<item value="E:\KHGIT\workspace\objectArrayPractice1"/>

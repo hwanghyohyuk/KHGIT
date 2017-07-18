@@ -9,7 +9,6 @@
 <fullyQualifiedTypeName name="com.oop.model.dto.Employee"/>
 <fullyQualifiedTypeName name="com.oop.controller.EmpArrayTest"/>
 <fullyQualifiedTypeName name="test.Sort.testSelectSort"/>
-<fullyQualifiedTypeName name="java.lang.Character"/>
 <fullyQualifiedTypeName name="ncs.test3.Tv"/>
 <fullyQualifiedTypeName name="ncs.test7.Book"/>
 <fullyQualifiedTypeName name="ncs.test8.BookUpdate"/>
@@ -60,4 +59,5 @@
 <fullyQualifiedTypeName name="exception.silsub1.CharacterProcess"/>
 <fullyQualifiedTypeName name="exception.silsub1.CharCheckException"/>
 <fullyQualifiedTypeName name="exception.silsub1.TestSilsub"/>
+<fullyQualifiedTypeName name="java.lang.Character"/>
 </qualifiedTypeNameHistroy>

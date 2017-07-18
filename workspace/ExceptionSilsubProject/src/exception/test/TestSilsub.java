@@ -13,7 +13,7 @@ public class TestSilsub {
 		String inputString = sc.nextLine();
 		sc.close();
 		try {
-			System.out.println(new CharacterProcess().countAlpha(inputString));
+			System.out.println("문자열에 포함된 영문자 갯수 : "+new CharacterProcess().countAlpha(inputString));
 		} catch (CharCheckException e) {
 			// TODO Auto-generated catch block
 			System.out.println(e.getMessage());
@@ -39,8 +39,8 @@ public class TestSilsub {
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		//new TestSilsub().silsub1();
-		new TestSilsub().silsub2();
+		new TestSilsub().silsub1();
+		//new TestSilsub().silsub2();
 }
 
 }

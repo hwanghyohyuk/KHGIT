@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="oop.practice.model.Book"/>
-<fullyQualifiedTypeName name="oop.practice.model.Product"/>
 <fullyQualifiedTypeName name="oop.method.NonStaticSample"/>
 <fullyQualifiedTypeName name="test.method.testRecurivecallMethod"/>
 <fullyQualifiedTypeName name="oop.staticmethod.StaticMethod"/>
@@ -55,9 +53,11 @@
 <fullyQualifiedTypeName name="test.make.ExceptionSample"/>
 <fullyQualifiedTypeName name="test.make.TestMyException"/>
 <fullyQualifiedTypeName name="java.util.Scanner"/>
-<fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="exception.silsub1.CharacterProcess"/>
 <fullyQualifiedTypeName name="exception.silsub1.CharCheckException"/>
 <fullyQualifiedTypeName name="exception.silsub1.TestSilsub"/>
 <fullyQualifiedTypeName name="java.lang.Character"/>
+<fullyQualifiedTypeName name="java.io.BufferedReader"/>
+<fullyQualifiedTypeName name="java.io.InputStreamReader"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
 </qualifiedTypeNameHistroy>

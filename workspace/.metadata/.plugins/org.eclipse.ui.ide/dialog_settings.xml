@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+		<item value="E:\KHGIT\workspace\IOSilsubProject"/>
+		<item value="E:\KHGIT\workspace\testIOProject"/>
 		<item value="D:\KH_Backup\KHGIT\workspace\MyNoteApp"/>
 		<item value="E:\KHGIT\workspace\testCalendarProject"/>
 		<item value="E:\KHGIT\workspace\testBasicAPIProject"/>

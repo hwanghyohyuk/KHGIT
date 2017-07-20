@@ -15,7 +15,7 @@ public class Client1 {
 
 		try {
 			// 소켓객체 생성
-			socket = new Socket("192.168.25.9", 6000);
+			socket = new Socket("192.168.30.34", 6000);
 
 			// 입출력작업
 			// 스트림 조회

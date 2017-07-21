@@ -1,0 +1,5 @@
+#sample.txt
+#users data file
+user11=user11,pass11,홍길동
+user22=user22,pass22,이순신
+user33=user33,pass33,김춘추

@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+		<item value="C:\Users\Hwang\Desktop\자바 프로젝트\catchMind"/>
+		<item value="C:\Users\Hwang\Downloads\CatchMind"/>
 		<item value="E:\KHGIT\workspace\boardProject"/>
 		<item value="E:\KHGIT\workspace\ExceptionSilsubProject"/>
 		<item value="E:\KHGIT\workspace\MyNoteApp"/>

@@ -8,6 +8,7 @@
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="String name, int age, int height, int weight"/>
 			<item value="st1"/>
 		</list>
 		<list key="replacehistory">

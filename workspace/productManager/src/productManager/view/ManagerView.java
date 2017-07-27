@@ -32,9 +32,22 @@ public class ManagerView extends JFrame implements MouseListener {
 
 	public ManagerView() {
 		super("상품 관리 프로그램");
-		this.setSize(800, 600);
+		//크기 설정
+		int frameWidth=800;
+		int frameHeight=600;
+		double moniterWidth=Toolkit.getDefaultToolkit().getScreenSize().getWidth();
+		double moniterHeight=Toolkit.getDefaultToolkit().getScreenSize().getHeight();
+				
+		//좌표설정
+		int frameStartX = (int)(moniterWidth-frameWidth)/2;
+		int frameStartY = (int)(moniterHeight-frameHeight)/2;
+				
+		//틀 설정
+		this.setBounds(frameStartX, frameStartY, frameWidth, frameHeight);
+				
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		this.setResizable(false);
+		
 		// 윈도우 이벤트
 		this.addWindowListener(new WindowAdapter() {
 			@Override

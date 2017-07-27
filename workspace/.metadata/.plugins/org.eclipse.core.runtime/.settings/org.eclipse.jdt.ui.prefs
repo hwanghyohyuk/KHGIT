@@ -22,7 +22,7 @@ org.eclipse.jdt.ui.text.code_templates_migrated=true
 org.eclipse.jdt.ui.text.custom_code_templates=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates/>
 org.eclipse.jdt.ui.text.custom_templates=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates/>
 org.eclipse.jdt.ui.text.templates_migrated=true
-org.eclipse.jface.textfont=1|\uB9D1\uC740 \uACE0\uB515|14.0|0|WINDOWS|1|0|0|0|0|0|0|0|0|1|0|0|0|0|\uB9D1\uC740 \uACE0\uB515;
+org.eclipse.jface.textfont=1|\uB9D1\uC740 \uACE0\uB515|12.0|0|WINDOWS|1|0|0|0|0|0|0|0|0|1|0|0|0|0|\uB9D1\uC740 \uACE0\uB515;
 proposalOrderMigrated=true
 sourceHoverBackgroundColor=41,41,41
 sp_cleanup.add_default_serial_version_id=true

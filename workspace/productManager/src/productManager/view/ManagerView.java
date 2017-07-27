@@ -44,7 +44,7 @@ public class ManagerView extends JFrame implements MouseListener {
 
 			@Override
 			public void windowClosing(WindowEvent e) {
-				new FileController().fileSave(pc.transformOtoH(pc.demodeling(dtm)));
+				fc.fileSave(pc.transformOtoH(pc.demodeling(dtm)));
 			}
 		});
 		// 좌측
@@ -60,6 +60,7 @@ public class ManagerView extends JFrame implements MouseListener {
 		panel_Center.add(scrollPane);
 
 		table = new JTable();
+		table.setAutoCreateRowSorter(true);
 		table.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
 		table.setModel(dtm);
 		scrollPane.setViewportView(table);
@@ -76,13 +77,13 @@ public class ManagerView extends JFrame implements MouseListener {
 		panel_Inner.setLayout(null);
 
 		rdbtn_pId = new JRadioButton("Product ID");
-		rdbtn_pId.setBounds(71, 11, 83, 23);
+		rdbtn_pId.setBounds(12, 11, 107, 23);
 		rdbtn_pId.setSelected(true);
 		panel_Inner.add(rdbtn_pId);
 
 		rdbtn_pName = new JRadioButton("Product Name");
 
-		rdbtn_pName.setBounds(158, 11, 107, 23);
+		rdbtn_pName.setBounds(123, 11, 142, 23);
 		panel_Inner.add(rdbtn_pName);
 
 		rdbtn_group = new ButtonGroup();
@@ -90,6 +91,12 @@ public class ManagerView extends JFrame implements MouseListener {
 		rdbtn_group.add(rdbtn_pName);
 
 		btn_viewList = new JButton("목록 보기");
+		btn_viewList.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				table.setModel(pc.viewModel(dtm));
+			}
+		});
 		btn_viewList.setBounds(273, 10, 100, 25);
 		panel_Inner.add(btn_viewList);
 
@@ -99,6 +106,17 @@ public class ManagerView extends JFrame implements MouseListener {
 		tf_search.setColumns(10);
 
 		btn_search = new JButton("검색");
+		btn_search.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				if(rdbtn_pId.isSelected()){
+					table.setModel(pc.searchModel(true, tf_search.getText(), dtm));
+				}
+				if(rdbtn_pName.isSelected()){
+					table.setModel(pc.searchModel(false, tf_search.getText(), dtm));
+				}
+			}
+		});
 		btn_search.setBounds(293, 45, 80, 25);
 		panel_Inner.add(btn_search);
 
@@ -172,20 +190,29 @@ public class ManagerView extends JFrame implements MouseListener {
 		btn_add.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				int row = table.getSelectedRow();
-				if(row!=-1){
-					
-				}
+				pc.addModel(tf_pId.getText(), tf_pName.getText(), (int)sp_price.getValue(), ta_description.getText(), dtm);	
+				tf_pId.setText("");
+				tf_pName.setText("");
+				sp_price.setValue(0);
+				ta_description.setText("");
 			}
 		});
 		btn_modify.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
+				int row = table.getSelectedRow();
+				pc.modifyModel(row, tf_pId.getText(), tf_pName.getText(), (int)sp_price.getValue(), ta_description.getText(), dtm);
 			}
 		});
 		btn_delete.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
+				int row = table.getSelectedRow();
+				pc.deleteModel(row, dtm);
+				tf_pId.setText("");
+				tf_pName.setText("");
+				sp_price.setValue(0);
+				ta_description.setText("");
 			}
 		});
 

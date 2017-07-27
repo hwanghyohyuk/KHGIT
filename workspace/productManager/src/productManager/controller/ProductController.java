@@ -16,7 +16,7 @@ public class ProductController {
 			dtm.addRow(oTemp[j]);
 		}
 	}
-	
+		
 	public Object[][] demodeling(DefaultTableModel dtm) {//table의 기록되어있는 값들을 Object[][] 배열로 변환
 		Object[][] oTemp = new Object[dtm.getRowCount()][4];
 		for (int i = 0; i < oTemp.length; i++) {
@@ -53,4 +53,46 @@ public class ProductController {
 		}		
 		return temp;
 	}
+	
+	public void addModel(String pId, String pName, int price, String description,DefaultTableModel dtm) {//객체정보를 table의 model에 추가
+		Object[] temp = {pId,pName,String.valueOf(price),description};
+		dtm.addRow(temp);
+	}
+	public void modifyModel(int row,String pId, String pName, int price, String description,DefaultTableModel dtm) {
+		dtm.setValueAt(pId, row, 0);
+		dtm.setValueAt(pName, row, 1);
+		dtm.setValueAt(String.valueOf(price), row, 2);
+		dtm.setValueAt(description, row, 3);
+	}
+	public void deleteModel(int row,DefaultTableModel dtm){
+		dtm.removeRow(row);
+	}
+
+	public DefaultTableModel viewModel(DefaultTableModel dtm) {
+		DefaultTableModel clone = dtm;
+		return clone;
+	}
+	
+	public DefaultTableModel searchModel(boolean idORname, String searchStr ,DefaultTableModel dtm) {
+		DefaultTableModel resultDtm = new DefaultTableModel(new Object[][] {},
+			new String[] { "product_id", "p_name", "price", "description" });
+		
+		if(idORname){//id검색이면
+			for(int i=0;i<dtm.getRowCount();i++)
+			if(((String)dtm.getValueAt(i, 0)).contains(searchStr)){//문자열을 포함하고있는지 확인
+				//있으면
+				resultDtm.addRow(new String[]{(String) dtm.getValueAt(i, 0),(String) dtm.getValueAt(i, 1),(String) dtm.getValueAt(i, 2),(String) dtm.getValueAt(i, 3)});
+
+			}
+		}else{//name검색이면
+			for(int i=0;i<dtm.getRowCount();i++)
+				if(((String)dtm.getValueAt(i, 1)).contains(searchStr)){//문자열을 포함하고있는지 확인
+					//있으면
+					resultDtm.addRow(new String[]{(String) dtm.getValueAt(i, 0),(String) dtm.getValueAt(i, 1),(String) dtm.getValueAt(i, 2),(String) dtm.getValueAt(i, 3)});
+				}
+		}
+		return resultDtm;
+	}
+
+	
 }

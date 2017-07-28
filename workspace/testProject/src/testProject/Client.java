@@ -13,25 +13,23 @@ public class Client implements Protocol {
 		ObjectOutputStream oos = null;
 
 		try {
-			socket = new Socket("192.168.30.34", 6000);
+			socket = new Socket("192.168.25.9", 6000);
 			System.out.println("서버와의 연결 성공!");
 
 			// 서버로부터 메시지를 받는 쓰레드 생성
 			ClientMassgeReader packetReader = new ClientMassgeReader(socket);
 			Thread thread = new Thread(packetReader);
 			thread.start();
-			while(true){
 			bufferedReader = new BufferedReader(new InputStreamReader(System.in));
 			oos = new ObjectOutputStream(socket.getOutputStream());
 			String str = bufferedReader.readLine();
 				if (str.equals("") || str.equals("exit")) {
 					System.out.println("연결이 종료되었습니다.");
-					break;
+					return;
 				}
 				Packet sendPacket = new Packet(true, LOGIN, new TimeHandler().getTime(), str);
 				oos.writeObject(sendPacket);
 				oos.flush();
-			}
 		} catch (UnknownHostException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

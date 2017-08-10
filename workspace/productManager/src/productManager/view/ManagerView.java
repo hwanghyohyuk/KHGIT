@@ -32,32 +32,32 @@ public class ManagerView extends JFrame implements MouseListener {
 
 	public ManagerView() {
 		super("상품 관리 프로그램");
-		//크기 설정
-		int frameWidth=800;
-		int frameHeight=600;
-		double moniterWidth=Toolkit.getDefaultToolkit().getScreenSize().getWidth();
-		double moniterHeight=Toolkit.getDefaultToolkit().getScreenSize().getHeight();
-				
-		//좌표설정
-		int frameStartX = (int)(moniterWidth-frameWidth)/2;
-		int frameStartY = (int)(moniterHeight-frameHeight)/2;
-				
-		//틀 설정
+		// 크기 설정
+		int frameWidth = 800;
+		int frameHeight = 600;
+		double moniterWidth = Toolkit.getDefaultToolkit().getScreenSize().getWidth();
+		double moniterHeight = Toolkit.getDefaultToolkit().getScreenSize().getHeight();
+
+		// 좌표설정
+		int frameStartX = (int) (moniterWidth - frameWidth) / 2;
+		int frameStartY = (int) (moniterHeight - frameHeight) / 2;
+
+		// 틀 설정
 		this.setBounds(frameStartX, frameStartY, frameWidth, frameHeight);
-				
+
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		this.setResizable(false);
-		
+
 		// 윈도우 이벤트
 		this.addWindowListener(new WindowAdapter() {
 			@Override
 			public void windowOpened(WindowEvent e) {
-				pc.modeling(pc.transformHtoO(fc.fileOpen()), dtm);
+				pc.modeling(fc.fileOpen(), dtm);
 			}
 
 			@Override
 			public void windowClosing(WindowEvent e) {
-				fc.fileSave(pc.transformOtoH(pc.demodeling(dtm)));
+				fc.fileSave(pc.demodeling(dtm));
 			}
 		});
 		// 좌측
@@ -83,9 +83,10 @@ public class ManagerView extends JFrame implements MouseListener {
 		JPanel panel_East = new JPanel();
 		panel_East.setBounds(399, 0, 385, 561);
 		getContentPane().add(panel_East);
-		panel_East.setLayout(new BorderLayout(0, 0));
+		panel_East.setLayout(null);
 
 		JPanel panel_Inner = new JPanel();
+		panel_Inner.setBounds(0, 0, 385, 561);
 		panel_East.add(panel_Inner);
 		panel_Inner.setLayout(null);
 
@@ -122,10 +123,10 @@ public class ManagerView extends JFrame implements MouseListener {
 		btn_search.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				if(rdbtn_pId.isSelected()){
+				if (rdbtn_pId.isSelected()) {
 					table.setModel(pc.searchModel(true, tf_search.getText(), dtm));
 				}
-				if(rdbtn_pName.isSelected()){
+				if (rdbtn_pName.isSelected()) {
 					table.setModel(pc.searchModel(false, tf_search.getText(), dtm));
 				}
 			}
@@ -203,7 +204,8 @@ public class ManagerView extends JFrame implements MouseListener {
 		btn_add.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				pc.addModel(tf_pId.getText(), tf_pName.getText(), (int)sp_price.getValue(), ta_description.getText(), dtm);	
+				pc.addModel(tf_pId.getText(), tf_pName.getText(), (int) sp_price.getValue(), ta_description.getText(),
+						dtm);
 				tf_pId.setText("");
 				tf_pName.setText("");
 				sp_price.setValue(0);
@@ -214,7 +216,8 @@ public class ManagerView extends JFrame implements MouseListener {
 			@Override
 			public void mouseClicked(MouseEvent e) {
 				int row = table.getSelectedRow();
-				pc.modifyModel(row, tf_pId.getText(), tf_pName.getText(), (int)sp_price.getValue(), ta_description.getText(), dtm);
+				pc.modifyModel(row, tf_pId.getText(), tf_pName.getText(), (int) sp_price.getValue(),
+						ta_description.getText(), dtm);
 			}
 		});
 		btn_delete.addMouseListener(new MouseAdapter() {
